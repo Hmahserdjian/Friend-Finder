@@ -1,10 +1,8 @@
 
 
-  // Question: What does this code do??
-  $.post("/api/html", answer)
+  $.post("/", answer)
         .then(function(data) {
         console.log("add.html", data);
-    alert("Adding character...");
   });
 
 
@@ -23,10 +21,9 @@ $("#add-btn").on("click", function (event) {
         10: $("#Q10").val()
     };
 
-    $.post("/api/html", answer)
+    $.post("/home", answer)
         .then(function(data){
             console.log("add.html", data);
-        alert("adding answer...");
         });
 });
 

@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -12,34 +12,64 @@ app.use(bodyParser.json());
 
 var question = [
     {
-        routeQuestion: "Do you like cheese?"
+        routeQuestion: "Q1",
+        name:
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: "Do you like puppies?"
+        routeQuestion: "Q2",
+        name: 
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: "Do you like coding?"
+        routeQuestion: "Q3",
+        name: 
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: "Do you like movies?"
+        routeQuestion: "Q4",
+        name:
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: "Do you like facesuckers from aliens?"
+        routeQuestion: "Q5",
+        name:
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: "Is Thanos the greatest hero of all time?"
+        routeQuestion: "Q6",
+        name:
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: "Do you like Call of Duty?"
+        routeQuestion: "Q7",
+        name:
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: "Do you like Samsung?"
+        routeQuestion: "Q8",
+        name:
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: "Do you like the less superior apple?"
+        routeQuestion: "Q9",
+        name:
+        Photo:
+        Scores:
     },
     {
-        routeQuestion: ""
+        routeQuestion: "Q10"
+        name:
+        Photo:
+        Scores:
     }
 ];
 
@@ -49,6 +79,15 @@ app.get("/home.html", function (req, res) {
 
 app.get("/survey", function (req, res) {
     res.sendFile(path.join(__dirname, "survey.html"));
+});
+
+app.post(/data/survey, function () {
+    var newFriend = req.body;
+
+
+   friend.push(newFriend);
+
+   res.json(newFriend);
 });
 
 app.listen(PORT, function () {
