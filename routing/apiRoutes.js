@@ -1,13 +1,16 @@
-app.get("/api/friends", function (req, res) {
-    return res.json(reservations);
-});
+var path = require("path");
+var newFriends =require("../app/data/friends.js");
 
+module.export= function (app) {
+    app.post("data/survey", function () {
 
-app.post(/data/survey, function () {
-    var newFriend = req.body;
+        var newFriend = req.body;
 
+        friend.push(newFriend);
 
-    friend.push(newFriend);
-
-    res.json(newFriend);
-});
+        res.json(newFriend);
+    });
+    app.get("./api/friends", function (req, res) {
+        return res.json(reservations);
+    });
+};

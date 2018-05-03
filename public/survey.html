@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link>
+
 </head>
 
 <body>
@@ -32,123 +40,113 @@
             <div class="form-group">
                 <label for="">Name (Required)</label>
                 <input type="text" class="form-control" id="Name" placeholder="">
+                <br>
                 <form action="/action_page.php">
                     <input type="file" name="pic" accept="image/*">
                     <input type="submit">
                 </form>
                 <label for="">Photo (Required)</label>
             </div>
-            <div class="dropdown">
+         
                 <h4>Do you like cheese?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Do you like puppies?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Do you like coding?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Do you like movies?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Do you like facesuckers from aliens?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Is Thanos the greatest hero of all time?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Do you like Call of Duty?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Do you like Samsung?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>                    
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Do you like the less superior apple?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                    </div>
+                <select class="chosen-select">
+                    <option value="">Select One</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>                    
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
                 <h4>Do you like Star Wars?</h4>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="Q10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Choose one!
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">1 (strongly disagree)</a>
-                    <a class="dropdown-item" href="#">2</a>
-                    <a class="dropdown-item" href="#">3</a>
-                    <a class="dropdown-item" href="#">4</a>
-                    <a class="dropdown-item" href="#">5(strongly agree)</a>
-                </div>
+                <select class="chosen-select">
+                    <option value="">Select One!</option>
+                    <option value="1">1 (strongly disagree)</a>
+                    <option value="2">2</option>                    
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</a>
+                </select>
             </div>
 
             <br>
@@ -157,12 +155,7 @@
         </form>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="../app/data/friends.js"></script>
 </body>
 
 </html>
