@@ -31,3 +31,10 @@ $("#add-btn").on("click", function (event) {
         event.preventDefault();
         location.href = "/survey"
 })
+
+
+for (var i = 0; i < scores.length; i++) {
+    if (chosen === scores[i].routeQuestion) {
+        return res.json(scores[i]);
+    }
+}

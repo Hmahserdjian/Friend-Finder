@@ -73,22 +73,22 @@ var question = [
     }
 ];
 
-app.get("/home.html", function (req, res) {
-    res.sendFile(path.join(__dirname, "home.html"));
-});
+// app.get("/home.html", function (req, res) {
+//     res.sendFile(path.join(__dirname, "home.html"));
+// });
 
-app.get("/survey", function (req, res) {
-    res.sendFile(path.join(__dirname, "survey.html"));
-});
+// app.get("/survey", function (req, res) {
+//     res.sendFile(path.join(__dirname, "survey.html"));
+// });
 
-app.post(/data/survey, function () {
-    var newFriend = req.body;
+// app.post(/data/survey, function () {
+//     var newFriend = req.body;
 
 
-   friend.push(newFriend);
+//    friend.push(newFriend);
 
-   res.json(newFriend);
-});
+//    res.json(newFriend);
+// });
 
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
