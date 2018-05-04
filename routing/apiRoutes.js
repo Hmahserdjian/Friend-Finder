@@ -1,7 +1,7 @@
 var path = require("path");
 var newFriends =require("../app/data/friends.js");
 
-module.export= function (app) {
+module.exports= function (app) {
     app.post("data/survey", function () {
 
         var newFriend = req.body;
@@ -10,7 +10,7 @@ module.export= function (app) {
 
         res.json(newFriend);
     });
-    app.get("./api/friends", function (req, res) {
-        return res.json(reservations);
+    app.get("/api/friends", function (req, res) {
+        return res.json(newFriends);
     });
 };

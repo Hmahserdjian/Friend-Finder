@@ -1,5 +1,9 @@
-
-
+var friends =
+{
+    name: "Hrag",
+    answers: "1,2,3,4,5,5,4,1" 
+}
+module.exports=(friends);
 //   ("/", answer)
 //         .then(function(data) {
 //         console.log("add.html", data);
