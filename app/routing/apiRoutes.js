@@ -1,5 +1,5 @@
 var path = require("path");
-var newFriends =require("../app/data/friends.js");
+var newFriends =require("../data/friends.js");
 
 module.exports= function (app) {
     app.post("data/survey", function () {
